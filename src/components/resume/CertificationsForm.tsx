@@ -86,7 +86,7 @@ const CertificationsForm: React.FC<CertificationsFormProps> = ({ data, onChange 
                     type="text"
                     value={cert.name}
                     onChange={(e) => handleCertificationChange(index, 'name', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="AWS Certified Solutions Architect"
                   />
                 </div>
@@ -99,7 +99,7 @@ const CertificationsForm: React.FC<CertificationsFormProps> = ({ data, onChange 
                     type="text"
                     value={cert.issuer}
                     onChange={(e) => handleCertificationChange(index, 'issuer', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="Amazon Web Services"
                   />
                 </div>
@@ -112,7 +112,7 @@ const CertificationsForm: React.FC<CertificationsFormProps> = ({ data, onChange 
                     type="month"
                     value={cert.date}
                     onChange={(e) => handleCertificationChange(index, 'date', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                   />
                 </div>
 
@@ -124,7 +124,7 @@ const CertificationsForm: React.FC<CertificationsFormProps> = ({ data, onChange 
                     type="url"
                     value={cert.link}
                     onChange={(e) => handleCertificationChange(index, 'link', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="https://credly.com/badge/..."
                   />
                 </div>

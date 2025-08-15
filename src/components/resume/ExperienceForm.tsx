@@ -89,7 +89,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={exp.jobTitle}
                     onChange={(e) => handleExperienceChange(index, 'jobTitle', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="Software Engineer"
                   />
                 </div>
@@ -102,7 +102,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={exp.company}
                     onChange={(e) => handleExperienceChange(index, 'company', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="Tech Company Inc."
                   />
                 </div>
@@ -115,7 +115,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={exp.location}
                     onChange={(e) => handleExperienceChange(index, 'location', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="New York, NY"
                   />
                 </div>
@@ -128,7 +128,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     type="month"
                     value={exp.startDate}
                     onChange={(e) => handleExperienceChange(index, 'startDate', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                   />
                 </div>
 
@@ -141,7 +141,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     value={exp.endDate}
                     onChange={(e) => handleExperienceChange(index, 'endDate', e.target.value)}
                     disabled={exp.current}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 text-black placeholder-gray-400"
                   />
                 </div>
 
@@ -165,7 +165,7 @@ const ExperienceForm: React.FC<ExperienceFormProps> = ({ data, onChange }) => {
                     value={exp.description}
                     onChange={(e) => handleExperienceChange(index, 'description', e.target.value)}
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="• Developed and maintained web applications using React and Node.js
 • Collaborated with cross-functional teams to deliver high-quality software
 • Implemented automated testing procedures that reduced bugs by 40%"

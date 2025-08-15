@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gradient-to-r from-green-500 via-teal-500 to-blue-500 min-h-screen;
+/* Space-like gradient background */
+.bg-deep-space {
+  background: radial-gradient(circle at center, rgba(88, 28, 135, 0.6) 0%, rgba(17, 24, 39, 1) 100%);
+  background-color: #0b0b0f; /* Deep fallback */
+  color: white;
 }

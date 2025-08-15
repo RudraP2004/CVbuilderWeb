@@ -78,7 +78,6 @@ const Register: React.FC = () => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
-    // Clear field error when user starts typing
     if (formErrors[name]) {
       setFormErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -107,6 +106,8 @@ const Register: React.FC = () => {
           )}
 
           <form onSubmit={handleSubmit} className="space-y-6">
+
+            {/* Full Name */}
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                 Full Name
@@ -122,8 +123,8 @@ const Register: React.FC = () => {
                   autoComplete="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className={`block w-full pl-10 pr-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors ${
-                    formErrors.name ? 'border-red-300' : 'border-gray-300'
+                  className={`block w-full pl-10 pr-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-900 bg-white transition-colors ${
+                    formErrors.name ? 'border-red-500' : 'border-gray-300'
                   }`}
                   placeholder="Enter your full name"
                 />
@@ -133,6 +134,7 @@ const Register: React.FC = () => {
               )}
             </div>
 
+            {/* Email */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                 Email address
@@ -148,8 +150,8 @@ const Register: React.FC = () => {
                   autoComplete="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className={`block w-full pl-10 pr-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors ${
-                    formErrors.email ? 'border-red-300' : 'border-gray-300'
+                  className={`block w-full pl-10 pr-3 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-900 bg-white transition-colors ${
+                    formErrors.email ? 'border-red-500' : 'border-gray-300'
                   }`}
                   placeholder="Enter your email"
                 />
@@ -159,6 +161,7 @@ const Register: React.FC = () => {
               )}
             </div>
 
+            {/* Password */}
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
                 Password
@@ -174,8 +177,8 @@ const Register: React.FC = () => {
                   autoComplete="new-password"
                   value={formData.password}
                   onChange={handleInputChange}
-                  className={`block w-full pl-10 pr-10 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors ${
-                    formErrors.password ? 'border-red-300' : 'border-gray-300'
+                  className={`block w-full pl-10 pr-10 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-900 bg-white transition-colors ${
+                    formErrors.password ? 'border-red-500' : 'border-gray-300'
                   }`}
                   placeholder="Enter your password"
                 />
@@ -196,6 +199,7 @@ const Register: React.FC = () => {
               )}
             </div>
 
+            {/* Confirm Password */}
             <div>
               <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-2">
                 Confirm Password
@@ -211,8 +215,8 @@ const Register: React.FC = () => {
                   autoComplete="new-password"
                   value={formData.confirmPassword}
                   onChange={handleInputChange}
-                  className={`block w-full pl-10 pr-10 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors ${
-                    formErrors.confirmPassword ? 'border-red-300' : 'border-gray-300'
+                  className={`block w-full pl-10 pr-10 py-2 border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-900 bg-white transition-colors ${
+                    formErrors.confirmPassword ? 'border-red-500' : 'border-gray-300'
                   }`}
                   placeholder="Confirm your password"
                 />
@@ -233,6 +237,7 @@ const Register: React.FC = () => {
               )}
             </div>
 
+            {/* Submit */}
             <button
               type="submit"
               disabled={loading}

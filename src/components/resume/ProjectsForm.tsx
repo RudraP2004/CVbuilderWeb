@@ -88,7 +88,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={project.title}
                     onChange={(e) => handleProjectChange(index, 'title', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="E-commerce Website"
                   />
                 </div>
@@ -101,7 +101,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     type="url"
                     value={project.link}
                     onChange={(e) => handleProjectChange(index, 'link', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="https://github.com/username/project"
                   />
                 </div>
@@ -114,7 +114,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     type="month"
                     value={project.startDate}
                     onChange={(e) => handleProjectChange(index, 'startDate', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                   />
                 </div>
 
@@ -126,7 +126,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     type="month"
                     value={project.endDate}
                     onChange={(e) => handleProjectChange(index, 'endDate', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                   />
                 </div>
 
@@ -138,7 +138,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={project.technologies}
                     onChange={(e) => handleProjectChange(index, 'technologies', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="React, Node.js, MongoDB, Express"
                   />
                 </div>
@@ -151,7 +151,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = ({ data, onChange }) => {
                     value={project.description}
                     onChange={(e) => handleProjectChange(index, 'description', e.target.value)}
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400"
                     placeholder="Describe your project, its features, your role, and achievements..."
                   />
                 </div>

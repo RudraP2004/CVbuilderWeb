@@ -89,7 +89,7 @@ const SkillsForm: React.FC<SkillsFormProps> = ({ data, onChange }) => {
                     type="text"
                     value={skill.name}
                     onChange={(e) => handleSkillChange(index, 'name', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400 text-sm"
                     placeholder="JavaScript"
                   />
                 </div>
@@ -101,7 +101,7 @@ const SkillsForm: React.FC<SkillsFormProps> = ({ data, onChange }) => {
                   <select
                     value={skill.level}
                     onChange={(e) => handleSkillChange(index, 'level', e.target.value)}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black placeholder-gray-400 text-sm"
                   >
                     {skillLevels.map((level) => (
                       <option key={level.value} value={level.value}>
